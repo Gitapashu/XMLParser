@@ -1,0 +1,30 @@
+<university>
+    <student id="1">
+        <name>John Doe</name>
+        <age>20</age>
+        <courses>
+            <course>
+                <name>Mathematics</name>
+                <grade>A</grade>
+            </course>
+            <course>
+                <name>Physics</name>
+                <grade>B+</grade>
+            </course>
+        </courses>
+    </student>
+    <student id="2">
+        <name>Jane Smith</name>
+        <age>22</age>
+        <courses>
+            <course>
+                <name>Computer Science</name>
+                <grade>A+</grade>
+            </course>
+            <course>
+                <name>English</name>
+                <grade>A-</grade>
+            </course>
+        </courses>
+    </student>
+</university>
