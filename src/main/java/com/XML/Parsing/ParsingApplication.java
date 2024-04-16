@@ -1,15 +1,8 @@
 package com.XML.Parsing;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.sun.tools.javac.Main;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.ResourceLoader;
-
-import java.io.File;
 import java.io.IOException;
 
 
@@ -26,7 +19,7 @@ public class ParsingApplication {
 			University university = xmlMapper.readValue(resource.getFile(), University.class);
 			for (Student student : university.getStudent()) {
 				System.out.println("Student Name: " + student.getName());
-				System.out.println("Student ID: " + student.getId());
+				//System.out.println("Student ID: " + student.getId());
 				System.out.println("Student Age: " + student.getAge());
 				for (Course course : student.getCourses()) {
 					System.out.println("  Course: " + course.getName());

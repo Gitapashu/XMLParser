@@ -1,19 +1,27 @@
 package com.XML.Parsing;
 
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.util.List;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @JacksonXmlRootElement(localName = "university")
 public class University {
-
-    @JacksonXmlProperty(localName = "student")
+    @JacksonXmlElementWrapper(useWrapping = true,localName = "studentt")
     List<Student> student;
+
+    public University() {
+    }
+    public University(List<Student> student) {
+        this.student = student;
+    }
+
+    public List<Student> getStudent() {
+        return student;
+    }
+
+    public void setStudent(List<Student> student) {
+        this.student = student;
+    }
 }
+

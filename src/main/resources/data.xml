@@ -1,4 +1,5 @@
 <university>
+    <studentt>
     <student id="1">
         <name>John Doe</name>
         <age>20</age>
@@ -6,10 +7,6 @@
             <course>
                 <name>Mathematics</name>
                 <grade>A</grade>
-            </course>
-            <course>
-                <name>Physics</name>
-                <grade>B+</grade>
             </course>
         </courses>
     </student>
@@ -27,4 +24,5 @@
             </course>
         </courses>
     </student>
+    </studentt>
 </university>
